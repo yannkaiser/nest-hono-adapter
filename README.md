@@ -15,7 +15,7 @@ A [Hono](https://honojs.com) adapter for the [Nest](https://nestjs.com) framewor
 - [x] JSON body parsing
 - [ ] ArrayBuffer body parsing
 - [ ] Blob body parsing
-- [ ] FormData body parsing
+- [ ] FormData body parsing / use `parseBody`
 - [x] Guards
 - [ ] Interceptors
 - [ ] Request body validation
@@ -29,23 +29,12 @@ A [Hono](https://honojs.com) adapter for the [Nest](https://nestjs.com) framewor
 - [ ] Parser middleware (partially implemented)
 - [ ] Hono Presets
 
+*This list may not be up-to-date. Some features may work but it is not considered "done" unless tests verify that feature explicitly.*
+
 ## Installation
 
 ```bash
 $ pnpm install
-```
-
-## Running the app
-
-```bash
-# development
-$ pnpm run start
-
-# watch mode
-$ pnpm run start:dev
-
-# production mode
-$ pnpm run start:prod
 ```
 
 ## Test
@@ -53,9 +42,6 @@ $ pnpm run start:prod
 ```bash
 # unit tests
 $ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
 
 # test coverage
 $ pnpm run test:cov
@@ -67,10 +53,10 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Author - Yann KAISER
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This package is [MIT licensed](LICENSE).

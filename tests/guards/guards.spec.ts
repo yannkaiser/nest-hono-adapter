@@ -20,8 +20,7 @@ describe('Guards', () => {
     await app.close();
   });
 
-  // TODO: rename test
-  it('should return 401 when guard blocks', () => {
+  it('should return 403 when guard blocks', () => {
     return supertest(app.getHttpServer()).get('/test').expect(403);
   });
   it('should return 200 when guard does not block', () => {
